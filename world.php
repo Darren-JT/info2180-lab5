@@ -14,12 +14,47 @@ $c = $_GET['country'];
 $stmt = $conn->query("SELECT * FROM countries WHERE name LIKE '%$c%'");
 $ans = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-echo "<ul>";
-foreach ($ans as $row) 
-  {
-    echo "<li>" . " The country of " . $row['name'] . " is ran by " . $row['head_of_state'] ."</li>";
 
 
-}
-echo "</ul>";
 ?>
+
+<table>
+
+    <thead>
+
+        <tr>
+            <th><b>Name<b></th>
+
+            <th><b>Continent<b></th>
+            <th><b>Independence  <b></th>
+            
+            <th><b>Head of state<b></th>
+
+
+
+        </tr>
+
+
+    </thead>
+
+
+    <tbody>
+
+        <?php foreach ($ans as $row): ?>
+        <tr>
+            <td><?= $row['name'];?></td>
+
+            <td><?= $row['continent'];?></td>
+
+            <td><?= $row['independence_year'];  ?></td>
+            
+            <td><?= $row['head_of_state'];?></td>
+        </tr>
+
+
+        <?php endforeach; 
+        ?>
+
+    </tbody>
+
+</table>
