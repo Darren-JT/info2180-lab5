@@ -1,1 +1,82 @@
 /* Add your own styles */
+
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #d46f6f;
+
+
+    margin: 20px;
+
+}
+
+
+header {
+    margin-bottom:  100px ;
+}
+
+header h1 {
+    color: #dfd9d9;
+    font-size: 75px;
+    background-color: rgb(67, 64, 64);
+}
+
+
+#controls {
+    margin-bottom: 30px;
+    background-color: rgb(200, 183, 216);
+    padding: 60px;
+
+    border-radius: 2%;
+
+    display: inline-block ;
+    border: 1px solid #000000;
+
+
+
+}
+#controls button{
+    font-family: Arial;
+    background-color: #eba488;
+
+}
+
+input[type="text"]  {
+    padding: 50px;
+    width: 200px;
+}
+
+button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #ddd;
+    border: 1px solid #999;
+}
+
+
+table {
+    margin: 0 auto; 
+
+    width: 80%;
+
+
+    border-collapse: collapse;
+    background-color: white;
+
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+
+
+}
+
+th {
+    background-color: #eeeeee;
+    font-weight: bold;
+
+    
+}
